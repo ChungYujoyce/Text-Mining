@@ -8,13 +8,14 @@
     <!-- Add additional CSS in static file -->
     {% load static %}
     <link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
-    <img src="{% static 'images/demo/backgrounds/01.png' %}" alt="UML diagram" style="width:555px;height:540px;">
+    <link href="{% static 'layout/styles/textinput.css' %}" rel="stylesheet" type="text/css" media="all">
+    <!-- <img src="{% static 'images/demo/backgrounds/01.png' %}" alt="UML diagram" style="width:555px;height:540px;"> -->
 </head>
 
 <body id="top">
 
     {% load static %}
-    <div class="topspacer bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
+    <div class="topspacer bgded overlay">
         {% block sidebar %}
         <div class="wrapper row1">
             <header id="header" class="hoc clear">
@@ -47,10 +48,8 @@
             <!-- ################################################################################################ -->
         </div>
         {% endblock %}
+        {% block content %}{% endblock %}
 
-        <div>
-            {% block content %}{% endblock %}
-        </div>
     </div>
 
 </body>

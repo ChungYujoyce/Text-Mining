@@ -1,12 +1,4 @@
 @charset "utf-8";
-/*
-Template Name: Yoffa
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
-File: Layout CSS
-*/
 
 @import url("font-awesome.min.css");
 @import url("custom.flexslider.css");
@@ -20,22 +12,17 @@ File: Layout CSS
 .row5, .row5 a{}
 
 
-/* Header + Pageintro Wrapping Spacer
---------------------------------------------------------------------------------------------------------------- */
-.topspacer{padding:80px 0 0;}
-
-
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-#header{padding:0 15px;}
+#header{padding:0 10px;}
 
 #header #logo{margin:28px 0 0 0;}
-#header #logo h1{margin:0; padding:0; font-size:22px; text-transform:uppercase;}
+#header #logo h1{margin:0; padding:0; font-size:50px; text-transform:uppercase;}
 
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:180px 0;}
+#pageintro{padding:100px 0;}
 
 #pageintro article{max-width:65%; margin:0 auto; text-align:center;}
 #pageintro article *{text-transform:uppercase;}
@@ -55,7 +42,7 @@ File: Layout CSS
 #introblocks ul li *{margin:0; padding:0; line-height:normal;}
 #introblocks ul li div{position:relative; padding-left:65px; word-wrap:break-word;}
 #introblocks ul li div i{display:block; position:absolute; top:-2px; left:0; width:50px; font-size:46px; line-height:1;}
-#introblocks ul li div .heading{font-size:1.2rem;}
+#introblocks ul li div .heading{font-size:3rem;}
 
 
 /* Content Area
@@ -70,7 +57,7 @@ File: Layout CSS
 
 .intro{}
 .intro article{max-width:320px;}
-.intro article .heading{font-size:1.2rem;}
+.intro article .heading{font-size:3rem;}
 .intro article .excerpt{padding:20px;}
 .intro article .excerpt *{margin:0 0 10px 0;}
 .intro article .excerpt footer{margin:0;}
@@ -100,58 +87,13 @@ File: Layout CSS
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
 
 
-/* Footer
---------------------------------------------------------------------------------------------------------------- */
-#footer{padding:80px 0;}
-
-#footer .heading{margin-bottom:50px; font-size:1.2rem;}
-
-#footer nav{text-transform:uppercase;}
-#footer nav ul li{display:inline-block; margin-right:20px;}
-#footer nav ul li:last-child{margin-right:0;}
-
-#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
-#footer .linklist li:last-child{margin:0; padding:0; border:none;}
-#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
-#footer .linklist li, #footer .linklist li::after{clear:both;}
-
-#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
-#footer .contact li *{margin:0; padding:0; line-height:1.6;}
-#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
-
-#footer input, #footer button{border:1px solid;}
-#footer input{display:block; width:100%; padding:8px;}
-#footer button{padding:8px 18px 10px; text-transform:uppercase; font-weight:700; cursor:pointer;}
-
-
-/* Copyright
---------------------------------------------------------------------------------------------------------------- */
-#copyright{padding:20px 0;}
-#copyright *{margin:0; padding:0;}
-
-
-/* Transition Fade
-This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices
-If you don't want it to fade all elements, you have to list the ones you want to be faded individually
-Delete it completely to stop fading
---------------------------------------------------------------------------------------------------------------- */
-*, *::before, *::after{transition:all .3s ease-in-out;}
-#mainav form *{transition:none !important;}
-
-
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-
 
 /* Navigation
 --------------------------------------------------------------------------------------------------------------- */
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 #mainav, #breadcrumb, .sidebar nav{line-height:normal;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:30px; line-height:10px;}
 
 /* Top Navigation */
 #mainav{}
@@ -176,16 +118,6 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav form select{width:100%; padding:5px; border:1px solid;}
 #mainav form select option{margin:5px; padding:0; border:none;}
 
-/* Breadcrumb */
-#breadcrumb{padding:160px 0 30px;}
-#breadcrumb ul{margin:0; padding:0; list-style:none; text-transform:uppercase; opacity:.5;}
-#breadcrumb:hover ul{opacity:1;}
-#breadcrumb li{display:inline-block; margin:0 6px 0 0; padding:0;}
-#breadcrumb li a{display:block; position:relative; margin:0; padding:0 12px 0 0; font-size:12px;}
-#breadcrumb li a::after{top:3px; right:0; content:"\f101";}
-#breadcrumb li:last-child a{margin:0; padding:0;}
-#breadcrumb li:last-child a::after{display:none;}
-#breadcrumb .heading{margin:0 0 20px 0; font-size:1.6rem;}
 
 /* Sidebar Navigation */
 .sidebar nav{display:block; width:100%;}
@@ -280,22 +212,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#00CCBD;}
 #introblocks{color:#FFFFFF; background:#00CCBD;}
 #introblocks ul, #introblocks ul li{border-color:#FFFFFF;}
 
-
-/* Content Area */
-.intro article{color:inherit; background-color:#FFFFFF;}
-
-
-/* Footer */
-#footer .heading{color:#FFFFFF;}
-#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.2);}
-#footer nav a{color:inherit;}
-#footer nav li:first-child a, #footer nav a:hover{color:#00CCBD;}
-#footer input, #footer button{border-color:transparent;}
-#footer input{color:#474747; background-color:#F6F6F6;}
-#footer input:focus{border-color:#00CCBD;}
-#footer button{color:#FFFFFF; background-color:#00CCBD;}
-
-
 /* Navigation */
 #mainav li a{color:inherit;}
 #mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#00CCBD; background-color:inherit;}
@@ -348,7 +264,7 @@ table a, #comments a{background-color:inherit;}
 @media screen and (max-width:900px){
 	.hoc{max-width:90%;}
 
-	#header{padding:20px;}
+	#header{padding:5px;}
 	#header #logo{margin:5px 0 0 0;}
 
 	#mainav{}
@@ -362,9 +278,6 @@ table a, #comments a{background-color:inherit;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
 	#footer{}
-
-	#copyright{}
-	#copyright p:first-of-type{margin-bottom:10px;}
 }
 
 
