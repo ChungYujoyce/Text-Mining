@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Sentiment Analysis</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{{ url_for('static',filename='img/favicon.png') }}" rel="icon">
+    <link href="{{ url_for('static',filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/text.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="paperwrapper">
+        <div class="paper">
+            <div class="textwrapper">
+                <!--<textarea placeholder="Write something..." type="text" name="words" action='/sentiment'></textarea>-->
+                <form method='post' action="/sentiment">
+                    <!--<input type='text' name='result'>-->
+                    <textarea type='text' name='result' row="15" placeholder="Write something..."></textarea>
+                    <div class="button_cont">
+                        <button class="send" type='submit'>Analyze</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <a href="/return"><input type="button" value="Home" class="button"></a>
+</body>
+
+</html>

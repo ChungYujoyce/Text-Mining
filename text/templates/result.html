@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sentiment result</title>
+    <!-- Favicons -->
+    <link href="{{ url_for('static',filename='img/favicon.png') }}" rel="icon">
+    <link href="{{ url_for('static',filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ url_for('static',filename='css/text.css') }}" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Kaushan+Script&family=Lobster&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: black">
+    <a href="/return"><input type="button" value="Home" class="button"></a>
+    <a href="/sentiment"><input type="button" value="Sentiment" class="button1"></a>
+
+    <div class="center">
+
+        <textarea row="15" style="color:rgb(169, 239, 248); font-family: 'Aref Ruqaa', serif;">{{A}}</textarea>
+        <br><br>
+        <h1 style="color: rgb(80, 172, 233); font-family: 'Lobster', cursive;">{{B}}</h1>
+        <h2 style="color: rgb(61, 153, 122)">{{C}}</h2>
+        <h2 style="color: rgb(39, 134, 103)">{{D}}</h2>
+        <h2 style="color: rgb(209, 28, 28)">{{E}}</h2>
+
+    </div>
+    <br><br><br><br><br>
+    <div style="margin: 0 auto;">
+        <div class="wrapper" style="float: right;">
+            <span class="square">
+                <a class="before after"
+                    href="https://edition.cnn.com/2020/03/30/us/southwest-airlines-coronavirus-health-care-workers-trnd/index.html"
+                    target="_blank">Positive
+                    sample texts</a></span>
+        </div>
+        <div class="wrapper" style="float: right;">
+            <span class="square">
+                <a class="before after"
+                    href="https://www.theguardian.com/film/2019/oct/02/why-so-stupid-how-joker-is-too-juvenile-to-be-provocative"
+                    target="_blank">Neutral
+                    sample texts</a></span>
+        </div>
+        <div class="wrapper" style="float: right;">
+            <span class="square">
+                <a class="before after" href="https://www.imdb.com/title/tt7286456/plotsummary?ref_=tt_stry_pl#synopsis"
+                    target="_blank">Negative
+                    sample texts</a></span>
+        </div>
+    </div>
+</body>
+
+</html>
