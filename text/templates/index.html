@@ -5,14 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Text mining</title>
+    <title>Text Mining Group 3</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ url_for('static',filename='img/favicon.png') }}" rel="icon">
-    <link href="{{ url_for('static',filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
-
+    <link href="{{ url_for('static',filename='img/icon.png') }}" rel="icon">
     <!-- Vendor CSS Files -->
     <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static',filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -104,8 +102,8 @@
 
                                         </p>
                                         <p class="lead">
-                                            Chung Yu Huang : <br>Student major in computer science, junior.<br><br>
-                                            Chen Wei Huang : <br>Student major in computer science, junior.<br><br>
+                                            黃中鈺(Joyce) : <br>Student major in computer science, junior.<br><br>
+                                            黃晨瑋(Jimmy) : <br>Student major in computer science, junior.<br><br>
                                             Shreya Upadhyay : <br>Student major in Electrical Engineer, PhD.<br><br>
                                             簡婉軒(Winnie) : <br>Student major in Electrical Engineer, PhD.<br>
                                         </p>
@@ -134,7 +132,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col">
                         <div class="service-box">
                             <div class="service-ico">
                                 <span class="ico-circle"><i class="ion-monitor"></i></span>
@@ -149,34 +147,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col">
                         <div class="service-box">
                             <div class="service-ico">
                                 <span class="ico-circle"><i class="ion-code-working"></i></span>
                             </div>
                             <div class="service-content">
-                                <h2 class="s-title" style="color: cadetblue;">Words tokenize</h2>
+                                <h2 class="s-title" style="color: cadetblue;">Word Cloud</h2>
                                 <p class="s-description text-center">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem
-                                    fugiat! Quia,
-                                    provident vitae! Magni
-                                    tempora perferendis eum non provident.
+                                    We use...
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="service-box">
                             <div class="service-ico">
                                 <span class="ico-circle"><i class="ion-camera"></i></span>
                             </div>
                             <div class="service-content">
-                                <h2 class="s-title" style="color: cadetblue;">Photography</h2>
+                                <h2 class="s-title" style="color: cadetblue;">Coming soon..</h2>
                                 <p class="s-description text-center">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem
-                                    fugiat! Quia,
-                                    provident vitae! Magni
-                                    tempora perferendis eum non provident.
+                                    Not done yet.
                                 </p>
                             </div>
                         </div>
@@ -187,12 +179,9 @@
                                 <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
                             </div>
                             <div class="service-content">
-                                <h2 class="s-title" style="color: cadetblue;">Responsive Design</h2>
+                                <h2 class="s-title" style="color: cadetblue;">Coming soon..</h2>
                                 <p class="s-description text-center">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem
-                                    fugiat! Quia,
-                                    provident vitae! Magni
-                                    tempora perferendis eum non provident.
+                                    Not done yet.
                                 </p>
                             </div>
                         </div>
@@ -203,12 +192,9 @@
                                 <span class="ico-circle"><i class="ion-paintbrush"></i></span>
                             </div>
                             <div class="service-content">
-                                <h2 class="s-title" style="color: cadetblue;">Graphic Design</h2>
+                                <h2 class="s-title" style="color: cadetblue;">Coming soon..</h2>
                                 <p class="s-description text-center">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem
-                                    fugiat! Quia,
-                                    provident vitae! Magni
-                                    tempora perferendis eum non provident.
+                                    Not done yet.
                                 </p>
                             </div>
                         </div>
@@ -219,16 +205,13 @@
                                 <span class="ico-circle"><i class="ion-stats-bars"></i></span>
                             </div>
                             <div class="service-content">
-                                <h2 class="s-title" style="color: cadetblue;">Marketing Services</h2>
+                                <h2 class="s-title" style="color: cadetblue;">Coming soon..</h2>
                                 <p class="s-description text-center">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem
-                                    fugiat! Quia,
-                                    provident vitae! Magni
-                                    tempora perferendis eum non provident.
+                                    Not done yet.
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </section><!-- End Services Section -->
@@ -248,13 +231,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col">
                         <div class="work-box">
-                            <a href="{{ url_for('static', filename='img/work-1.jpg') }}" data-gall="portfolioGallery"
+                            <a href="{{ url_for('static', filename='img/sentiment.jpg') }}" data-gall="portfolioGallery"
                                 class="venobox">
                                 <div class="work-img">
-                                    <img src="{{ url_for('static', filename='img/work-1.jpg') }}" alt=""
-                                        class="img-fluid">
+                                    <a href="/sentiment"><img
+                                            src="{{ url_for('static', filename='img/sentiment.jpg') }}" alt=""
+                                            class="img-fluid"></a>
                                 </div>
                                 <div class="work-content">
                                     <div class="row">
@@ -276,18 +260,18 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col">
                         <div class="work-box">
-                            <a href="{{ url_for('static', filename='img/work-2.jpg') }}" data-gall="portfolioGallery"
+                            <a href="{{ url_for('static', filename='img/cloud.png') }}" data-gall="portfolioGallery"
                                 class="venobox">
                                 <div class="work-img">
-                                    <img src="{{ url_for('static', filename='img/work-2.jpg') }}" alt=""
-                                        class="img-fluid">
+                                    <a href="/word_cloud"><img src="{{ url_for('static', filename='img/cloud.png') }}"
+                                            alt="" class="img-fluid"></a>
                                 </div>
                                 <div class="work-content">
                                     <div class="row">
                                         <div class="col-sm-8">
-                                            <h2 class="w-title">Words tokenize</h2>
+                                            <h2 class="w-title"><a href="/word_cloud">Word Cloud</a></h2>
                                             <div class="w-more">
                                                 <span class="w-ctegory">Propertiy 2</span> / <span class="w-date">April.
                                                     2020</span>
@@ -303,7 +287,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!--<div class="col-md-4">
                         <div class="work-box">
                             <a href="{{ url_for('static', filename='img/work-3.jpg') }}" data-gall="portfolioGallery"
                                 class="venobox">
@@ -314,7 +298,7 @@
                                 <div class="work-content">
                                     <div class="row">
                                         <div class="col-sm-8">
-                                            <h2 class="w-title">Mavrito Lana Dere</h2>
+                                            <h2 class="w-title">Coming soon..</h2>
                                             <div class="w-more">
                                                 <span class="w-ctegory">Web Design</span> / <span class="w-date">April.
                                                     2020</span>
@@ -341,7 +325,7 @@
                                 <div class="work-content">
                                     <div class="row">
                                         <div class="col-sm-8">
-                                            <h2 class="w-title">Bindo Laro Cado</h2>
+                                            <h2 class="w-title">Coming soon..</h2>
                                             <div class="w-more">
                                                 <span class="w-ctegory">Web Design</span> / <span class="w-date">April.
                                                     2020</span>
@@ -368,7 +352,7 @@
                                 <div class="work-content">
                                     <div class="row">
                                         <div class="col-sm-8">
-                                            <h2 class="w-title">Studio Lena Mado</h2>
+                                            <h2 class="w-title">Coming soon..</h2>
                                             <div class="w-more">
                                                 <span class="w-ctegory">Web Design</span> / <span class="w-date">April.
                                                     2020</span>
@@ -395,7 +379,7 @@
                                 <div class="work-content">
                                     <div class="row">
                                         <div class="col-sm-8">
-                                            <h2 class="w-title">Studio Big Bang</h2>
+                                            <h2 class="w-title">Coming soon..</h2>
                                             <div class="w-more">
                                                 <span class="w-ctegory">Web Design</span> / <span class="w-date">April.
                                                     2020</span>
@@ -410,7 +394,7 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
             </div>
