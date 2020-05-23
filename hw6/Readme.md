@@ -1,5 +1,5 @@
-## Text mining hw 6
-### Simple Movies Recommend System 
+# Text mining hw 6
+## Simple Movies Recommend System 
 
 1. We choose “encourage wise hope” to be the query text. 
 
