@@ -1,9 +1,2 @@
 -------------------No feature selection--------------------
-Start tfidf processing at 16:57:27
-Finish tfidf processing at 16:57:27
-Total spent time: 58.0771644115448sec
-
--------------------With feature selection--------------------
-Start tfidf processing at 17:00:18
-Finish tfidf processing at 17:00:29
-Total spent time: 10.770439624786377sec
+Start tfidf processing at 21:58:37
